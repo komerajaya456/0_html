@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    flex
+  </h1>
+  
+  display:flex;<!--make the content fit in one parent element(div) boxes in one box besides each
+  always parent element like (div) should flex-->
+  flex-direction:row;<!--elemets in one row side by side-->
+  flex-direction:column;<!--elements in coloum down by down-->
+  flex-dirextion:row-reverse;<!--reverse of row from edge of right-->
+  flex-direcrion:column-reverse;<!--reverse from bottom to top
+  when flex container height is high we left more space in top of container
+  crossaxes are length of row and column width and height upto limited given, not whole flex container
+  main axes means normal boxes with given content-->
+    <!--main axes:column- vertical,row-horizontal
+  cross axes:rows vertical extended,columns horixpzontal extented
+    both r opposite to each other-->
+ {justify-content:flex-end,flex-start;<!--arrange how the elements grouped and spaced on main axis
+   in row flex-start is left and end is right-->
+---+>rows {justify-content:center;<!--all items attach with no space between them-->
+   {justify-content:space-around;<!--sss1sss2sss3sss4sss-->
+  {justify-content:space-between;<!--1ssss2ssss3ssss4-->
+---+>columns{ same as above but here column
+  {align-items:stretch;<!--extend the cross axis full flex container-->
+    {align-items:flex-start; <!-- ,for row 1234 attached at top-left
+      for column 1/2/3/4 one by one at top-left-->
+   {align-items:flex-end;<!-- for row 1234 at bottom-left attached
+     for column 1/2/3/4 ome by one attched at top-right-->
+ {align-items:center;<!--for row 1234 at top-left and bottom-left middle attached
+   for column top-left & top-right middle.1/2/3/4 attached one by one-->
+   {flex-wrap:nowrap;<!--default it will outside of container 123|4 -->
+  {flex-wrap:wrap;<!--1234|567 it goes down for row and right side for column-->
+    {flex-wrap:wrap-reverse;<!--567|1234 the extra content goes upside in row & left side for column--> 
+  {align-content:stretch;<!--default,the wrapped content start ,end,space arou d between
+    whole rows and columns as items-->
+    {flex-basis:auto;<!--by default,size of flex item in main axis
+      it works only in flex items
+      50px,,,gap b/t 1,2
+      50%,,,gap 1 at middle2
+      mix,,,,,|1_______2____3__4|
+   auto-wide only upto content 12
+      if we give flex-basis(in item) greter than container width it will shrink in container-->
+ {flex-grow:0;<!--written in flex item ,default 12 by attached-->
+    flex-grow:1;<!--1____________23|more value takes more space and remaining with dafalut 0 value--> 
+  flex-grow:100;
+   flex-grow:100;<!--equallyshares-->
+   
+   flex-grow:20;
+   flex-grow:1;
+   flex-grow:3;<!--1__________________2__3-->
+   
+ {flex-shrink:1;<!--default ,,normal 12-->
+  flex-shrink:0;<!--it will not shrink-->
+    flex-shrink:0;<!--2nd will overflow outside|_______1________2___|_______-->
+   <!--if we give bigger value that will shrink more-->
+   we can use 3 at a time
+   {flex:flex-grow flex-shrink flex-basis}<!--inside   flex item-->
+  <hr>
+  <{float:right;}<!--image ppear on right (or) left of text-->
+    {clear:right;}<!--add to text,to come down to righted img that should not wrap around image-->
+    <hr>
+</body>
+</html>

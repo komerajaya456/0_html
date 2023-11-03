@@ -1,0 +1,41 @@
+
+.con{background-color: black}
+
+.sinuppos{
+  position: absolute;
+  top: 220px;
+  left: 370px;
+}
+
+.sininpos {
+  position: absolute;
+  top: 220px;
+  left: 880px;
+}
+.signupimg{
+      float: left;
+      margin: 1px;
+  width: 50%;
+  position: absolute;
+  top:30px;
+  height: 270px;
+    }
+
+.field{
+  text-align: justify;
+  position: absolute;
+  top:50px;
+  left:200px;
+  width:150px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 25px;
+}
+input[type=password],input[type=text],.dropbox,input[type=number]{
+  width: 100%;
+  padding: 1px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px Solid grey;
+}

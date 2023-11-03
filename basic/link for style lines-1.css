@@ -1,0 +1,98 @@
+.p { color:pink;
+   background-color:rgba(236,4,6,0.55);
+  font-family:italic;
+  font-size:50px;
+}
+h1 {
+  border: 2px solid #ff00ff;
+  padding:30px;
+  margin:50px;
+}
+.img{
+  border:solid 5px;
+ margin-left: 100px;
+  height:200px;
+  filter:blur(2px);
+  filter:contrast(50%);
+  
+  
+  width:200px;
+ transform:  rotate(-10deg); 
+  
+}
+.pi{
+  padding: 0  100px 20px 0;<!--top,right,bottom,left-->
+  color:red;
+  border:20px solid;
+  border-radius:27px;
+   height:200px;
+  width:200px; 
+}
+
+h2,h6{
+  border-radius:0 0 0 100px;
+  background-color: lightblue;
+  height:100px;
+  width:100px;
+  font-family: italic;
+}
+h3{
+  text-align: center;
+  background-color: lightblue;
+  width:10px;
+  height:10px;
+  margin:0 0 0 100px;
+  border-radius: 10px 10px 10px 10px;
+  border:solid lightblue;
+  
+}
+hp1{
+ background-color: blue; 
+  color:red;;;;;
+  border:solid blue 3px;
+  padding: 30px 50px 0 0;
+  height:1px;
+  width:100px;
+  margin: 0 0 0 80px;
+  
+  
+}
+button{
+  border:solid 5px;
+  transform:rotate(-10deg);
+  text-align:center;
+}
+div{
+ width:50px;
+  height: 50px;
+  background-color:blue;
+  border-radius: 0 50px 50px 50px;
+}
+p1{
+  margin:30px 10px 10px 30px;  
+  border-radius: 0 0 100px 10px;
+  border:solid 9px lightblue;
+  width:4px;
+  height:50%;
+  background-color:lightblue;
+  
+}
+div1{
+  border:solid 2px black;
+  width:50px;
+  background-color: yellow;
+  height: 50px;
+  
+}
+pos_rel{
+  position:relative;
+  top:50px;
+  right:100px;
+  left:100px;
+  
+}
+pos_abs{
+  position:absolute;
+  top:50px;
+  
+}
